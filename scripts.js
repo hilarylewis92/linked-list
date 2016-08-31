@@ -18,7 +18,7 @@ $('#form')[0].reset();
       '<div class = "unread">' +
         '<li>' + title +'</li>' +
         '<li><a href="' + url + '" target="_blank">' + url + '</li></a>' +
-        '<button type="button" id="readbtn"> Unread </button>' +
+        '<button type="button" id="readbtn"> Mark as Read </button>' +
         '<button type="button" id="removebtn"> Remove </button>' +
       '</div>'
     );
@@ -26,7 +26,6 @@ $('#form')[0].reset();
 });
 
 $('#readbtn').on('click', function () {
-  debugger;
   $('.unread').siblings().toggleClass("read");
 });
 
