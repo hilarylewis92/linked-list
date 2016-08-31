@@ -1,4 +1,6 @@
 $('#createbtn').on('click', function () {
-  var val = $('#title-input').val();
-  $('.title-list').append('<li>' + val + '</li>');
+  var title = $('#title-input').val();
+  $('.title-list').append('<li>' + title + '</li>');
+  var url = $('#url-input').val();
+  $('.url-list').append('<li>' + url + '</li>');
 });
