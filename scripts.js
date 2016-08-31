@@ -17,7 +17,6 @@ $('#url-input').on('keyup', function(){
   toggleButton();
 });
 
-
 $('#createbtn').on('click', function () {
   var title = $('#title-input').val();
   var url = $('#url-input').val();
@@ -26,7 +25,6 @@ $('#createbtn').on('click', function () {
   if (title === "" || url === "") {
     alert('Error: Please add both a title and URL before creating bookmark.');
     return;
-
   }
 
   makeBookmark (title, url);
@@ -41,18 +39,21 @@ $('#createbtn').on('click', function () {
       '</li>'
     );
   }
-
+  changeBookmarkCount();
 });
 
 $('.bookmark-list').on('click','.readbtn',function () {
-  $(this).parent().toggleClass("read");
+  $(this).parent().toggleClass('read');
+  changeBookmarkCount();
 });
 
 $('.bookmark-list').on('click', '.removebtn', function () {
   $(this).parent().remove();
+  changeBookmarkCount();
 });
 
-
-$('button').on ('click', function() {
-  return $('.total').append($('.bookmark').length);
-});
+function changeBookmarkCount() {
+   $('.totalread').text($('.read').length);
+   $('.totalunread').text($('.bookmark').length - $('.read').length);
+   $('.total').text($('.bookmark').length);
+}
