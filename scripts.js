@@ -5,7 +5,7 @@ $('#createbtn').on('click', function () {
   var url = $('#url-input').val();
 
   if (title === "" || url === "") {
-    alert('Error: add a title and url before creating a bookmark.');
+    alert('Error: Please add both a title and URL before creating bookmark.');
     return;
   }
 

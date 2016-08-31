@@ -26,6 +26,9 @@ body {
   h2{
     font-size: 30px;
   }
+  p {
+    font-style: italic;
+  }
 
   button {
     width: 25%;
