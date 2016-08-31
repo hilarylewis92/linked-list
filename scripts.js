@@ -1,5 +1,4 @@
-$('#creatbtn').on('click', function () {
-  var title = $('.title-input').text();
-
-  $('#list').append('<li></li>');
+$('#createbtn').on('click', function () {
+  var val = $('#title-input').val();
+  $('.title-list').append('<li>' + val + '</li>');
 });

@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="./style.css">
     <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
-    <link rel="stylesheet" href="/style.css">
   </head>
 
   <body>
@@ -14,26 +13,28 @@
 
     <section class="container">
       <form>
-        Title: <input type="text" name="title-input"><br>
-        URL: <input type="url" name="url-input"><br>
+        Title: <input type="text" id="title-input"><br>
+        URL: <input type="url" id="url-input"><br>
         <button type="button" id="createbtn">Create</button>
       </form>
 
-    <section class='bookmark-list'>
-      <h2>Bookmarks:</h2>
+      <section class='bookmark-list'>
+        <h2>Bookmarks:</h2>
 
-      <h3 class='title'>Title:</h3>
-      <h3 class='url'>URL:</h3>
+        <section class="box">
+          <h3 class='title'>Title:</h3>
+            <ul class='title-list'></ul>
 
-      <ul id='list'></ul>
+          <h3 class='url'>URL:</h3>
+          <ul class='url-list'></ul>
+        </section>
 
-      <button type="button" id="readbtn">Mark as Read</button>
-      <button type="button" id="removebtn">Remove</button>
+        <button type="button" id="readbtn">Mark as Read</button>
+        <button type="button" id="removebtn">Remove</button>
+      </section>
     </section>
-  </section>
 
-
-    <script src="scripts.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js'></script>
+    <script src="./scripts.js"></script>
   </body>
 </html>
