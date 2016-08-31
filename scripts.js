@@ -3,10 +3,12 @@
 $('#createbtn').on('click', function () {
   var title = $('#title-input').val();
   var url = $('#url-input').val();
+$('#form')[0].reset();
 
   if (title === "" || url === "") {
     alert('Error: Please add both a title and URL before creating bookmark.');
     return;
+
   }
 
   makeBookmark (title, url);
