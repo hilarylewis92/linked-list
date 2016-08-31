@@ -2,7 +2,8 @@ body {
   background: url("./images/background-photo.jpg") no-repeat;
   background-size: cover;
   font-family: 'Dosis', sans-serif;
-  text-align: center; }
+  text-align: center;
+}
 
 .container {
   background-color: rgba(224, 152, 43, 0.7);
@@ -18,13 +19,17 @@ body {
     padding: 20px;
   }
 
+  .bookmark-list {
+    padding: 20px;
+  }
+
   h2{
     font-size: 30px;
   }
 
   button {
-    width: 20%;
-   margin: 8px auto;
+    width: 25%;
+   margin: 10px auto;
    border-radius: 5%;
    border-color: teal;
    border-width: 8px;
@@ -32,6 +37,10 @@ body {
    font-weight: bold;
    background-color: white;
    letter-spacing: 2px;
-   /*position: relative;*/
    top: -40px;
   }
+
+  .error-msg {
+  padding-top: 24px;
+  color: indianred;
+}
