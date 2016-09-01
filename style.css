@@ -3,6 +3,19 @@ body {
   text-align: center;
 }
 
+h1 {
+    font-size: 60px;
+    font-weight: bold;
+    letter-spacing: 10px;
+    padding: 20px;
+  }
+
+p {
+    font-style: italic;
+    font-size: 20px;
+    color: #cc3300;
+  }
+
 .container {
   background-color: rgba(224, 152, 43, 0.7);
   margin: auto;
@@ -21,25 +34,19 @@ span {
   font-size: 20px;
 }
 
-h1 {
-    font-size: 60px;
-    font-weight: bold;
-    letter-spacing: 10px;
+.bookmark-list {
     padding: 20px;
   }
 
-  .bookmark-list {
-    padding: 20px;
-  }
-
-  h2{
+h2{
     font-size: 30px;
   }
 
-  p {
-    font-style: italic;
-    font-size: 20px;
-    color: #cc3300;
+.bookmark {
+    border: 2px solid #cc3300;
+    margin-bottom: 6px;
+    padding: 5px;
+    border-radius: 5px;
   }
 
 button {
@@ -53,13 +60,6 @@ button {
   background-color: white;
   letter-spacing: 1px;
   top: -40px;
-}
-
-.bookmark {
-  border: 2px solid #cc3300;
-  margin-bottom: 6px;
-  padding: 5px;
-  border-radius: 5px;
 }
 
 @media screen and (max-width: 1090px) {
