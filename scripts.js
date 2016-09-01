@@ -1,5 +1,3 @@
-var removeButton = $('#readbtn');
-var markAsReadButton = $('#readbtn');
 var createButton = $('#createbtn');
 
 function toggleButton (){
@@ -13,6 +11,7 @@ function toggleButton (){
 $('#title-input').on('keyup', function(){
   toggleButton();
 });
+
 $('#url-input').on('keyup', function(){
   toggleButton();
 });
@@ -30,13 +29,14 @@ $('#createbtn').on('click', function () {
   makeBookmark (title, url);
 
   function makeBookmark (title, url) {
-    return $('.bookmark-list').append(
-      '<li class="bookmark">' +
-        '<span>' + title +'</span>' +
-        '<span><a href="' + url + '" target="_blank">' + url + '</a></span>' +
-        '<button type="button" class="readbtn"> Mark as Read </button>' +
-        '<button type="button" class="removebtn"> Remove </button>' +
-      '</li>'
+    return $('.bookmark-list').append(`
+      <li class="bookmark">
+        <span>${title}</span> 
+        <span><a href="${url}" target="_blank">${url}</a></span>
+        <button type="button" class="readbtn">Mark as Read</button>
+        <button type="button" class="removebtn">Remove</button>
+      </li>
+      `
     );
   }
   changeBookmarkCount();
