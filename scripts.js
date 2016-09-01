@@ -31,9 +31,9 @@ $('#createbtn').on('click', function () {
   function makeBookmark (title, url) {
     return $('.bookmark-list').append(`
       <li class="bookmark">
-        <span>${title}</span> 
+        <span>${title}</span>
         <span><a href="${url}" target="_blank">${url}</a></span>
-        <button type="button" class="readbtn">Mark as Read</button>
+        <button type="button" class="readbtn">Mark Read</button>
         <button type="button" class="removebtn">Remove</button>
       </li>
       `
